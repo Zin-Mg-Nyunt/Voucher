@@ -13,7 +13,7 @@
             <div class="col-12 text-center mt-5 mb-4">
                 <h2 class="fw-bold">Invoice Maker</h2>
             </div>
-            <form class=" form-control p-4" id="inputForm">
+            <form class=" form-control p-4 mb-4 d-print-none" id="inputForm">
                 <div class="row g-2">
                     <div class="col">
                         <label for="items" class="form-label">Items</label>
@@ -28,6 +28,29 @@
                     </div>
                 </div>
             </form>
+            <table class=" table">
+                <thead>
+                    <tr>
+                        <td>Items</td>
+                        <td class="text-end">Unit Price</td>
+                        <td class="text-end">Quantity</td>
+                        <td class="text-end">Cost</td>
+                    </tr>
+                </thead>
+                <tbody id="itemsList"></tbody>
+                <tfoot class=" fw-bold">
+                    <tr>
+                        <td class=" text-center" colspan="3">Total Cost</td>
+                        <td class=" text-end" id="totalCost">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="col text-end d-print-none">
+                <button class=" btn btn-outline-primary" onclick="print()">                    
+                    <i class="bi bi-printer"></i>
+                    Print
+                </button>
+            </div>
         </div>
     </div>
 

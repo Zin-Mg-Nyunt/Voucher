@@ -2,5 +2,18 @@
 $font-family-sans-serif : 'Montserrat', 'Padauk', sans-serif;
 
 
-@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+#trash{
+    display: none;
+}
+#itemsList tr:hover #trash{
+    display: inline-block;
+}
+
+// @media print{
+//     .p-none{
+//         display: none;
+//     }
+// }
